@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+@media screen and (min-width:1000px) {
+    
+
+img{
+    vertical-align: middle;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+    font-family: 'M PLUS Rounded 1c', 'Meiryo',sans-serif;
+}
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*
+
+header
+
+*/
+/* header{
+    position: fixed;
+} */
+
+.header__nav_wrapper{
+    background-color: rgb(41, 74, 207);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header__nav_content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__nav{
+    margin:10px 0;
+    align-items: center;
+}
+
+.header__nav ul{
+    list-style: none;
+    display: flex;
+}
+.header__nav li {
+    padding:0 30px;
+    border-right: 2px dotted #eb8d0a;
+    text-align: center;
+}
+
+.header__nav li:last-child{
+    border-right: none;
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.header__nav a:hover{
+    border-bottom: 3px solid #eb8d0a;
+}
+
+.current_nav{
+    border-bottom: 3px solid #eb8d0a;
+}
+
+/*
+
+fin_header
+
+*/
+
+/* 
+
+main__title
+
+*/
+
+.main__title div{
+    height: 500px;
+    background:rgba(41, 74, 207); 
+}
+
+.main__title_company{
+    text-align: center;
+    color: white;
+    letter-spacing: 30px;
+    padding-top: 150px;
+    font-size: 64px;
+
+    animation-name:fadeInAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.main__title_company_en{
+    text-align: center;
+    color: white;
+    letter-spacing: 30px;
+
+    animation-name:fadeInAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.main__title_company_parag{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 24px;
+    animation-name:fadeInAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.main__title_company_parag span{
+    color:#eb8d0a;
+    font-weight: bold;
+}
+    
+    @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
+    
+
+/* 
+
+fin_main__title
+
+*/
+
+/* 
+
+message
+
+*/
+
+.message__sketch_wrapper{
+    margin-top: 50px;
+    position: relative;
+}
+
+.message__sketch_img_sma{
+    display: none;
+}
+
+.message__sketch_img{
+    text-align: center;
+}
+
+.message__sketch_img img{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.message__sketch_parag{
+    position: absolute;
+    top:10%;
+    left:20%;
+}
+
+
+
+/* 
+
+fin_message
+
+*/
+
+/*
+ 
+about 
+ 
+ */
+
+.about{
+    margin-top: 50px;
+}
+
+.about__title_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    background-color: #eb8d0a;
+}
+
+.about__president_wrapper{
+    /* max-width: 1320px; */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about__president_img{
+    margin-right: 50px;
+}
+
+.about__president_img img{
+    border-radius: 20%;
+}
+
+.about__president_comment h3{
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.about__president_comment p{
+    text-align: center;
+    line-height: 2.0;
+}
+
+/* 
+
+fin_about 
+
+*/
+
+/* 
+
+course
+
+*/
+
+/* .course__title_wrapper{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+} */
+
+.course__title_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    background-color: #eb8d0a;
+}
+
+.course__current_title{
+    width: 350px;
+}
+.course__content_title h3{
+    margin:  0 auto;
+}
+
+/* .course__current_content_wrapper{
+    background-color:rgba(41, 207, 207,0.1); 
+} */
+
+
+.course__current_content{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.course__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.course__current_content a{
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold;
+    color: #eb8d0a; */
+}
+.course__current_content a:visited{
+    color: black;
+}
+
+.course__current_content a span{
+    font-weight: bold;
+    color: #eb8d0a;
+}
+.course__current_wrapper {
+    /* width: 900px; */
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0.5em 1em;
+    border: solid 3px rgb(41, 74, 207);
+    border-radius: 8px;
+}
+
+.course__current_wrapper .course__current_title h3 {
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%,-1%);
+    padding: 0 15px;
+    line-height: 1;
+    background: #fafafa;
+    color: rgb(41, 74, 207);
+    font-weight: bold;
+}
+
+.course__current_content_wrapper{
+    /* max-width: 900px; */
+    max-width: 80%;
+    margin: 0   auto;
+}
+
+.course__content_title{
+    font-size: 20px;
+}
+
+.course__content_title span{
+    color: #eb8d0a;
+    font-weight: bold
+}
+.course__past{
+    text-align: right;
+}
+
+.course__past a{
+    font-weight: bold;
+    color: #eb8d0a;
+}
+
+.course__past a:visited{
+    color: #eb8d0a;
+}
+
+
+.course__list_wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.course__list_content_wrapper{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.course__list_content{
+    background: url(./img/kitakantouweb/main/course/24823711_s.jpg);
+    background-repeat:no-repeat;
+    height: 225px;
+    width: 300px;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.course__entry_wrapper{
+    margin: 0 auto;
+}
+
+
+
+.course__entry_howto{
+}
+
+
+.course__entry_howto_content{
+    width: 60%;
+    padding: 10px 0;
+    border-right: 3px solid rgb(41, 74, 207);
+    border-left: 3px solid rgb(41, 74, 207);
+    border-top: 3px solid rgb(41, 74, 207);
+    margin: 0 auto;
+}
+
+.course__entry_howto_content:last-child{
+    border-bottom: 3px solid rgb(41, 74, 207);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.course__entry_howto_content:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.course__entry_howto_content_title{
+    font-weight: bold;
+    font-size: 24px;
+    color: #eb8d0a;
+}
+
+
+.course__entry_howto_content_odd{
+    /* background-color: #3293e7; */
+}
+
+.course__entry_howto_content_even{
+    /* background-color: #8dbde7; */
+}
+
+/* 
+
+fin_course
+
+*/
+
+/* 
+
+Teacher
+
+*/
+.teacher__title_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    background-color: #eb8d0a;
+}
+
+.teacher__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.teacher__prof_wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.teacher__prof_content{
+    margin-right: 15px;
+}
+
+.teacher__prof_content span{
+    color: #eb8d0a;
+}
+.teacher__prof_parag{
+    margin-top: 20px;
+}
+
+.teacher__prof_parag p{
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
+
+.teacher__prof_wrapper img{
+    width:350px;
+    border-radius: 10%;
+}
+
+.teacher__btn{
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.teacher__btn a{
+    background: #eb8d0a;
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    color: white;
+    border-radius: 5%;
+}
+
+.teacher__btn a:hover{
+    background-color: rgb(41, 74, 207);
+
+}
+
+.teacher__btn a:visited{
+    color: white;
+}
+
+/* 
+
+fin_Teacher
+
+
+*/
+
+/* 
+
+Access
+
+*/
+
+
+.access__title_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    background-color: #eb8d0a;
+}
+
+.access__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.access__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.access__info p{
+    font-size: 16px;
+    padding-top: 15px;
+}
+/* 
+
+fin_Access
+
+*/
+
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .pagetop:hover, .pagetop:hover .pagetop__arrow {
+        border-color: #3293e7;
+    }
+}
+}
